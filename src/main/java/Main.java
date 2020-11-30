@@ -5,7 +5,9 @@ public class Main {
     long amount = 1000_60;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    //Плагин указывал на то, что вовзращаемое методом calculate объекта service значение не используется
+    long result = service.calculate(amount, registered);
+    System.out.println(result);
   }
 }
 
